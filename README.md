@@ -90,7 +90,7 @@ Make sure you have access to the Kvasir-SEG dataset and update the data path in 
 This is the current structure of my U-Net segmentation project:
 
 Kvasir-SEG-Unet-Augmentation-Study/
-
+```
 │── README.md               # Project overview and usage
 ├── train.py                 # Main training loop for U-Net
 ├── dataset.py              # Custom dataset loader with preprocessing
@@ -99,7 +99,7 @@ Kvasir-SEG-Unet-Augmentation-Study/
 ├── graphs/                 # Exported training charts (Dice score, loss, etc.)
 ├── results/                # Post-processed masks and evaluation outputs will be added soon.
 
-
+```
 ---
 
 ## Author
