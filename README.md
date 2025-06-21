@@ -92,17 +92,11 @@ This is the current structure of my U-Net segmentation project:
 Kvasir-SEG-Unet-Augmentation-Study/
 
 │── README.md               # Project overview and usage
-
 ├── train.py                 # Main training loop for U-Net
-
 ├── dataset.py              # Custom dataset loader with preprocessing
-
 ├── utils/                  # Dice score calculation and helper scripts
-
 ├── requirements.txt        # Python dependencies
-
 ├── graphs/                 # Exported training charts (Dice score, loss, etc.)
-
 ├── results/                # Post-processed masks and evaluation outputs will be added soon.
 
 
