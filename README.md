@@ -54,13 +54,13 @@ Training logs and metrics are tracked via Weights & Biases.
 The following plots were exported from Weights & Biases (wandb)
 
 **Training Loss**
-![Train Loss](graphs/train_loss.png)
+![Train Loss](Kvasir-SEG-Unet-Augmentation-Study-Project/Pytorch-UNet/graphs/train_loss.png)
 
 **Validation Dice Score**
-![Validation Dice](graphs/Val_Dice_Score.png)
+![Validation Dice](Kvasir-SEG-Unet-Augmentation-Study-Project/Pytorch-UNet/graphs/Val_Dice_Score.png)
 
 **Learning Rate Schedule**
-![Learning Rate](graphs/learning_rate.png)
+![Learning Rate](Kvasir-SEG-Unet-Augmentation-Study-Project/Pytorch-UNet/graphs/learning_rate.png)
 
 ## Coming Soon
 
