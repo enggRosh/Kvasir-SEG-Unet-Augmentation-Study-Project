@@ -106,8 +106,7 @@ Kvasir-SEG-Unet-Augmentation-Study/
 
 Roshani Kumari Jha  
 West Haven, CT  
-enggroshani.jha1818@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/enggroshani-jha/)
+
 
 ---
 
