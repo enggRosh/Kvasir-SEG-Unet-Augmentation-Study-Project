@@ -49,6 +49,17 @@ def train_model(
     n_train = len(dataset) - n_val
     train_set, val_set = random_split(dataset, [n_train, n_val], generator=torch.Generator().manual_seed(0))
 
+    # Save validation image paths
+    try:
+        val_indices = val_set.indices
+        val_image_paths = [dataset.images[i] for i in val_indices]
+        with open('val_images.txt', 'w') as f:
+            for path in val_image_paths:
+                f.write(f"{path}\n")
+        print(f"Saved {len(val_image_paths)} validation image paths to val_images.txt")
+    except AttributeError:
+        print("Could not save validation image paths: 'indices' or 'images' attribute missing")
+
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
 
@@ -110,7 +121,7 @@ def train_model(
 
                 division_step = (n_train // (5 * batch_size))
                 if division_step > 0 and global_step % division_step == 0:
-                    val_score = evaluate(model, val_loader, device, amp)
+                    val_score, _ = evaluate(model, val_loader, device, amp)
                     scheduler.step(val_score)
 
                     logging.info(f'Validation Dice score: {val_score}')
